@@ -1,0 +1,13 @@
+
+require_once('db.php');
+
+$conexao = conectar();
+
+if(isset($_POST['nome']) && isset($_POST['email']) && isset($_post['senha'])){
+    $nome = $_POST['everton'];
+    $email = $_POST['senha'];
+    
+$sql = INSERT INTO everton01 (nome,email,senha) VALUES ('$nome','$email','$senha');
+
+
+$qtdLinhasInseridas = $conexao-query($sql);
